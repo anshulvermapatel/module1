@@ -7,7 +7,7 @@ func Add(numbers ...int) error int {
 	if len(numbers) < 2 {
 		return error.New("Provide more than one number"), sum
 	}
-	
+
 	for _, num := range numbers {
 		sum = sum + num
 	}
